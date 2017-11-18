@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* General */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-muted {
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Forms */
+form {
+  margin-top: 20px;
+}
+.u-full-width {
+  max-width: 100%;
+}
+
+textarea {
+  min-height: 125px;
+}
+
+/* About me */
+.name {
+  margin: 0;
+}
+
+.social-icons {
+  font-size: 2.7em;
+  letter-spacing: 0.08em;
+
+  a {
+    color: #777;
+
+    &:hover {
+      color: #666;
+    }
+  }
+}
+
+/* Portfolio */
+.portfolio {
+  p {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-img {
+    border: 1px solid #eee;
+  }
+}
+
+/* Blog */
+article {
+  &.preview {
+    border-bottom: .2125em solid #33C3F0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* Navbar */
+$navbar_height: 5rem;
+
+.navbar {
+  display: block;
+  width: 100%;
+  height: $navbar_height;
+  background: #fff;
+  z-index: 99;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+
+  .container {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.navbar-spacer {
+  @extend .navbar;
+  display: none;
+}
+
+.navbar > .container {
+  width: 100%;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: $navbar_height;
+  color: #222;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .navbar .container {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0 5px;
+  }
+
+  /* Menu */
+  a.navbar-link {
+    margin-right: 5px;
+    margin-left: 4px;
+  }
+
+  /* Front Page */
+  h1 {
+    font-size: 3.4rem !important;
+  }
+
+  .social-icons {
+    font-size: 2.05em;
+    letter-spacing: 0.040em;
+  }
+
+  img.about-me.u-max-full-width {
+    max-width: 49%;
+  }
+
+  /* Portfolio */
+  h2 {
+    font-size: 3rem !important;
+  }
+
+  /* Contact me */
+  form {
+    margin: 0;
+  }
+
+  pre, blockquote, dl, figure, table, p, ul, ol, form {
+    margin-bottom: 1rem;
+  }
+
+  input.button-primary {
+    width: 100%;
+  }
+
+}
+
+// Import partials.
+@import
+  "skeleton/normalize",
+  "skeleton/skeleton",
+  "skeleton/font"
+;

@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://christian.broekmeulen.me/sitemap.xml

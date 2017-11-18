@@ -1,0 +1,24 @@
+---
+title: "Contact"
+layout: default
+keywords: "contact,christian,broekmeulen"
+description: "Contact Christian Broekmeulen"
+---
+<h1>Contact</h1>
+<p class="text-left text-muted">For any enquiries please use the contact form below, your message will be redirected to my personal mail and answered as soon as possible.</p>
+<form class="text-left" action="https://getsimpleform.com/messages?form_api_token=7d0177112994fbbd6487d142a4acfdde" method="post">
+  <input type='hidden' name='redirect_to' value='{{ site.url }}/contact-success' />
+  <div class="row">
+    <div class="six columns">
+      <label for="NameInput">Your name</label>
+      <input class="u-full-width" type="text" placeholder="Name" id="NameInput" name="name">
+    </div>
+    <div class="six columns">
+      <label for="EmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="mail@example.com" id="EmailInput" name="email">
+    </div>
+  </div>
+  <label for="Message">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Chris …" id="Message" name="message"></textarea>
+  <input class="button-primary" type="submit" value="Send Email">
+</form>

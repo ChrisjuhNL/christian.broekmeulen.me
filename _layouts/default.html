@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<head>
+    {% include google-analytics.html %}
+
+    <meta charset="utf-8">
+    <title>
+        {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} | Christian Broekmeulen
+    </title>
+    <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | escape }}{% else %}{{ site.keywords | escape }}{% endif %}">
+    <meta name="author" content="Christian Broekmeulen">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+    <link rel="shortcut icon" href="{{site.url}}/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{site.url}}/favicon.ico" type="image/x-icon">
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "email": "mailto:christian@broekmeulen",
+      "image": "{{site.url}}/assets/img/personal-picture.jpg",
+      "jobTitle": "Student",
+      "name": "Christian Broekmeulen",
+      "alumniOf": "Graafschap College",
+      "birthPlace": "Zevenaar, the Netherlands",
+      "birthDate": "1994.10.24",
+      "height": "75 inches",
+      "gender": "male",
+      "nationality": "Dutch",
+      "url": "https://christian.broekmeulen.me",
+	    "sameAs" : [ "https://twitter.com/ChristianB38",
+        "https://github.com/ChrisjuhNL",
+        "https://www.drupal.org/u/cbr",
+        "https://www.linkedin.com/in/cbroekmeulen",
+        "https://www.facebook.com/ChrisjuhB",
+        "https://www.instagram.com/christianbroekmeulen/"]
+    }
+    </script>
+</head>
+<body>
+<div class="navbar-spacer"></div>
+<nav class="navbar text-center">
+    <div class="container">
+        <ul class="navbar-list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+            <li class="navbar-item" itemprop="name"><a class="navbar-link" href="{{ site.url }}" itemprop="url">About Me</a></li>
+            <li class="navbar-item" itemprop="name"><a class="navbar-link" href="{{ site.url }}/portfolio" itemprop="url">Portfolio</a></li>
+            <li class="navbar-item" itemprop="name"><a class="navbar-link" href="{{ site.url }}/blog" itemprop="url">Blog</a></li>
+            <li class="navbar-item" itemprop="name"><a class="navbar-link" href="{{ site.url }}/contact" itemprop="url">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container text-center">
+    {{ content }}
+</div>
+</body>
+
+
+</html>
