@@ -1,6 +1,7 @@
 ---
 title: "Portfolio"
 layout: default
+permalink: /portfolio/
 keywords: "portfolio,christian,broekmeulen"
 description: "Christian Broekmeulen his portfolio"
 ---

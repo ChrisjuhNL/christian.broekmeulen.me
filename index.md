@@ -19,12 +19,10 @@ layout: default
   <a href="https://twitter.com/ChristianB38" target="_blank"><span class="icon-twitter"></span></a>
   <a href="https://github.com/ChrisjuhNL" target="_blank"><span class="icon-github"></span></a>
   <a href="https://www.drupal.org/u/cbr" target="_blank"><span class="icon-drupal"></span></a>
-  
-  <a href="contact"><span class="icon-envelop" target="_blank"></span></a>
 </div>
 
 <div class="row">
-  <copyright class="text-muted">©{{ 'now' | date: "%Y" }} Some rights reserved [<a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0</a>]</copyright>
+  <span class="text-muted">© {{ 'now' | date: "%Y" }} Some rights reserved [<a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0</a>]</span>
 </div>
 <div class="row">
   <span class="text-muted">

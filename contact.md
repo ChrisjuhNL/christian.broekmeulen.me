@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 layout: default
+permalink: /contact/
 keywords: "contact,christian,broekmeulen"
 description: "Contact Christian Broekmeulen"
 ---
